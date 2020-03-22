@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% load static %}
+  
+{% block css %}
+  <title>Events | BBA - BankingBook Analytics</title>
+  <link rel="stylesheet" href="{% static 'css/events.css' %}">
+{% endblock css %} 
+
+{% block content %} 
+    <div>
+      <div id="bg-1" class="hero-unit hero-post bg-events">
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <h3 style="text-align: center;text-transform: capitalize;margin-top: 100px; font-size: 45px;">
+              Events
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article id="post-10080" class="cf post-10080 page type-page status-publish has-post-thumbnail hentry"
+      role="article" itemscope="" itemtype="http://schema.org/BlogPosting" style="background-color: white !important;">
+      <header class="article-header">
+        <h1 class="page-title screen-reader-text">Home</h1>
+      </header>      
+        <div class="wrap events-article">
+          <div class="article1 m-all t-2of3 d-2of3">
+            {% for event in events_list %}
+              <article id="post-not-found" class="hentry cf">
+                <div class="callout-post callout-post-article cf">
+                  <h4>events</h4>
+                </div>              
+                <h3 class="h4 clear">
+                  <a target="blank" href="/event-sub/{{event.id}}"
+                    rel="bookmark">{{ event.headline }}</a>
+                </h3>
+                <div class="m-all t-2of3 d-2of3">
+                  <p class="byline vcard">
+                    <time class="updated" datetime="2020-04-15" pubdate=""> {{ event.date }} </time> 
+                  </p>
+                  <p> {{ event.classif }} </p>
+                </div>
+                <div class="m-all t-1of3 d-1of3 last-col">
+                  <img src="../static/img/logo3.png" style="margin-top: 30px;">
+                </div>
+                <footer class="article-footer"></footer>
+              </article>
+            {% endfor %}            
+          </div>
+          <aside role="complementary" class="m-all t-1of3 d-1of3 last-col cf" id="sidebar">
+            <h4>View:</h4>
+            <form action="" method="POST" class="form-post-filter">
+            {% csrf_token %}
+            {{ form.as_p }}
+              <p>
+                <input type="radio" value="future" name="filter_events" id="future" {% if value == 'future' %} checked {% endif %}>
+                <label for="future">Future Events</label><br>
+                <input type="radio" value="past" name="filter_events" id="past" {% if value == 'past' %} checked {% endif %}> 
+                <label for="past">Past Events</label><br>
+              </p>
+              <p><input type="submit" class="button button-dark-blue" value="Filter"></p>
+            </form>
+          </aside>
+        </div>
+    </article>
+{% endblock content %} 

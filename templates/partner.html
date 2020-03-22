@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+
+{% load static %}
+  
+{% block css %}
+  <title>Partner With BBA | BBA - BankingBook Analytics</title>
+  <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+    <link rel="stylesheet" href="{% static 'css/shortcodes.css' %}">
+{% endblock css %} 
+  
+{% block content %}
+    <div>
+      <div id="bg-1" class="hero-unit hero-post bg-partner">
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <h1 class="title-us">
+              Partner With BBA
+            </h1>
+            <p class="page-sub-title excerpt">Variety. Innovation. Impact.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article id="post-10080" class="cf post-10080 page type-page status-publish has-post-thumbnail hentry"
+      role="article" itemscope="" itemtype="http://schema.org/BlogPosting">
+      <header class="article-header">
+        <h1 class="page-title screen-reader-text">Home</h1>
+      </header>
+      <div class="wrap">
+        <h2>Through our solutions, BankingBook combines software, proprietary data, and extensive expertise in order to significantly improve our clients’ performance.</h2>
+        <p>The methodologies and approaches that power BBA’s applications are in practice at world’s top financial institutions. With our subscription licensing, small to mid-sized FIs can now afford best practice predictive models, which were mainly restricted to large banks with big budgets. BBA offers productized services to achieve regulatory compliance, effective business management, at-scale profitability and transformative automation. The financial-industries that we cover are: credit unions, banks, insurance companies, monolines and asset managers.</p>
+        <p>BBA's employees, contractors and partners stand to expand their horizons solving real-world challenges with complex data sets and advanced-analytics tools. We invite you to work with exceptional colleagues and clients to build analytics capabilities that break new ground, transform industries, and shape markets.</p>
+        <p>Every customer has different requirements. And while BBA has earned its reputation as functional experts and analytically rigrous solution provider in the market, we also recognize that our clients' needs may be best met by us partnering with other premium technology and service providers. Our strategic alliance program is designed to drive customer success and quality through best-in-class partnerships.</p>
+      </div>
+      <div class="wrap">
+        <div>
+          <h3 style="text-align: center;">FEATURED PATHS</h3>
+          <p>Thrive in an entrepreneurial culture. Explore new ideas to change the way we work. Get the training 
+            and support you need to keep growing and stay ahead of your field. At BankingBook Analytics, you’ll 
+            find opportunities in specialized paths, as well as generalist options to shape your career and make 
+            a difference every day to be at your best.</p>
+        </div>
+          <div class="content-column one_third">
+            <div style="text-align: center; padding-right:30px;">
+              <img src="../static/img/career-1.png">
+              <h3>Advisory<br><br></h3>
+              <p>Use analytics to make strategic recommendations</p>
+            </div>
+          </div>
+          <div class="content-column one_third">
+            <div style="text-align: center; padding-right:30px;">
+              <img src="../static/img/career-2.png">
+              <h3>Technology Solutions</h3>
+              <p>Help build the next generation of analytics applications</p>
+            </div>
+          </div>
+          <div class="content-column one_third last_column">
+            <div style="text-align: center; padding-right:0;">
+              <img src="../static/img/career-3.png">
+              <h3>PARTNER WITH US<br><br></h3>
+              <p>Partner with us to help provide access to our distributed technology solutuions globally</p> 
+            </div>
+          </div>
+          <div class="clear_column"></div>
+          <!-- <a href="">Email</a> -->
+          <div style="text-align: center; margin-bottom: 40px;">
+            <a href="#bba-form" class="novantas-more button button-dark-blue">Become a Partner in Growth</a>
+          </div>
+      </div>   
+    </article>
+
+  <div class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready" tabindex="-1" style="overflow: hidden auto; visibility: hidden;">
+    <div class="mfp-container mfp-inline-holder">
+      <div class="mfp-content">
+        <form method="POST" action="" id="bba-form" name="sendemail_form" class="white-popup cf">{% csrf_token %}
+          <h4>Please enter your email for verification:</h4>
+          <label class="screen-reader-text" for="novantas-email">Email:</label>
+          <input id="novantas-email" name="receiver_email" type="text" placeholder="user@domain.com">
+          <input type="button" class="button" value="Submit" onclick="ValidateEmail(document.sendemail_form.receiver_email)"/>
+          <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <a href="#bba-form1-success" id="submit_success"  class="button-white novantas-more" hidden>Submit Success</a>
+  <div class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready" tabindex="-1" style="overflow: hidden auto; visibility: hidden;">
+    <div class="mfp-container mfp-inline-holder">
+      <div class="mfp-content">
+        <form id="bba-form1-success" class="white-popup cf">
+          <center><h3 style="text-transform: none;"><br><b>Thank you for your interest.</b><br><br>A member of our Marketing Team will get in touch with you shortly.</h3></center>
+          <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    function ValidateEmail(inputText)
+    {
+      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if(inputText.value.match(mailformat))
+      {
+        var mail_flag = 0;
+        var mail_name = ['gmail', 'yahoo', 'hotmail', 'outlook', 'aol'];
+        var domain = inputText.value;
+        var domain = domain.split("@");
+        var domain_name = domain[1].split(".");
+        mail_name.forEach(nameFunction);
+        function nameFunction(item, i){
+          if(mail_name[i] == domain_name[0]){
+            mail_flag = 1;            
+          }
+        }
+        if(mail_flag == 1){
+          alert("This email domain is not authorized!");
+            document.sendemail_form.receiver_email.focus();
+            return false;
+        }
+        else{
+          $(".mfp-close").click();
+          setTimeout(myFunction, 500)
+          document.sendemail_form.submit();          
+        }  
+      }
+      else
+      {
+        alert("You have entered an invalid email address!");
+        document.sendemail_form.receiver_email.focus();
+        return false;
+      }
+    }
+    function myFunction(){
+        $("#submit_success")[0].click();
+    }
+  </script>
+{% endblock content %}

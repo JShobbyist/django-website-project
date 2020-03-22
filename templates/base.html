@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/my.css' %}">
+    {% block css %}
+    {% endblock css %}
+    <script src="{% static 'js/gheasp.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta name="google-site-verification" content="oW6D9XwPknt7hHX6dnS2K7BQD9P5Royjcp7GZ8xeYiM">
+    <script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    
+    <script src="{% static 'js/wp-emoji-release.min.js' %}" type="text/javascript" defer=""></script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        /* height: 1em !important;
+            width: 1em !important; */
+        margin: 0 .07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" id="child-style-css" href="{% static 'css/style.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" id="bones-stylesheet-css" href="{% static 'css/style1.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" id="magnific-stylesheet-css" href="{% static 'css/magnific-popup.css' %}" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="foobar-stylesheet-css" href="{% static 'css/jquery.foobar.2.1.min.css' %}" type="text/css"
+        media="all">
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-migrate.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/novantas.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/simple-job-board-email-attachment-public.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/modernizr.custom.min.js' %}"></script>
+    <script src="{% static 'js/carousel.min.js' %}"></script>
+
+    <script type="text/javascript">
+        try { Typekit.load(); } catch (e) { }
+    </script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+        jQuery('#carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            navSpeed: 1000,
+            autoplayTimeout: 10000,
+            autoplayHoverPause: true
+        });
+        });
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-6060385-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+    <script type="text/javascript">
+        _linkedin_data_partner_id = "368281"; 
+    </script>
+    <script type="text/javascript">
+        (function () { var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript"; b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s); })(); 
+    </script>
+    <noscript> <img height="1" width="1" style="display:none;" alt=""
+        src="https://dc.ads.linkedin.com/collect/?pid=368281&fmt=gif" /> 
+    </noscript>
+
+  <!--custom hero unit image -->
+</head>
+
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-10080 novantas">
+    <div class="x-white foobar-wrapper bottom" style="height: 70px; top: auto; bottom: 0px;">
+        <div class="foobar-shadow"></div>
+        <table cellpadding="0" cellspacing="0" class="foobar-container"
+        style="background-color: rgb(241, 101, 33); border: none; height: 70px;">
+        <tbody>
+            <tr class="foobar-container-row">
+            <td class="foobar-container-left" style="height: 70px; width: 0px;">
+                <div class="foobar-container-inner" style="max-height: 70px;"></div>
+            </td>
+            <td class="foobar-close-button-spacer" style="width: 50px;"></td>
+            <td class="foobar-container-center" style="height: 70px; width: auto;">
+                <div class="foobar-container-inner" style="max-height: 70px;">
+                <div class="foobar-message" style="opacity: 100; min-height: 32px; max-height: 70px;">
+                    <div id="foobar-message-0" class="foobar-message-wrapper"
+                    style="position: static; display: inline-block; visibility: visible; font-family: Verdana; font-size: 10pt; color: white; opacity: 100; margin-left: 0px; width: 883px; min-height: 32px; max-height: 70px;">
+                    We are using cookies, in order to improve the site usage. <br>You can change your cookie settings at any time. <a href="/cookie-notice-and-privacy-policy/"
+                        style="font-family: Verdana; font-size: 10pt; color: lightyellow; text-decoration: underline;">Learn
+                        more</a> </div>
+                </div>
+                <div class="x-white foobar-prev-button"
+                    style="background-color: rgb(241, 101, 33); height: 70px; margin-top: -35px;"></div>
+                <div class="x-white foobar-next-button"
+                    style="background-color: rgb(241, 101, 33); height: 70px; margin-top: -35px;"></div>
+                </div>
+            </td>
+            <td class="foobar-container-right" style="height: 70px; width: 0px;">
+                <div class="foobar-container-inner" style="max-height: 70px;"></div>
+            </td>
+            <td class="foobar-close-button-container" style="width: 50px;"><span class="foobar-close-button"
+                style="height: 70px;"></span></td>
+            </tr>
+        </tbody>
+        </table>
+        <div class="foobar-open-button-container"
+        style="height: 0px; top: auto; bottom: 0px; width: 50px; left: auto; right: 0px;">
+        <span class="foobar-open-button"
+            style="background-color: rgb(241, 101, 33); border: none; height: 0px; margin-left: -14px;"></span>
+        </div>
+    </div>
+  <!--[if gte IE 9]><!-->
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="height:0; width:0; display:block;">
+        <symbol viewBox="0, 0, 412, 206.352" id="bg-arrow-down">
+        <title>bg-arrow-down</title>
+        <g id="bg-arrow-down-Layer_1">
+            <path d="M412,0 L205.999,206.352 L0,0 z" id="bg-arrow-down-arrow-36-icon"></path>
+        </g>
+        </symbol>
+        <symbol viewBox="0, 0, 60, 26" id="icon-arrow-up">
+        <title>icon-arrow-up</title>
+        <g id="icon-arrow-up-Layer_1">
+            <g>
+            <path d="M60,0 L45,13 L30,26 L15,13 L0,0 L30,0 z" fill="#FFFFFF"></path>
+            <path
+                d="M60,0 L45,13 L30,26 L15,13 L0,0 L60,0 z M58.357,0.613 L1.643,0.613 L15.401,12.537 L30,25.189 L44.598,12.537 L58.357,0.613 z"
+                fill="#FFFFFF"></path>
+            </g>
+        </g>
+        </symbol>
+        <symbol viewBox="0, 0, 40, 40" id="icon-back-to-top">
+        <title>icon-back-to-top</title>
+        <g id="icon-back-to-top-Layer_1">
+            <path
+            d="M5.417,20 C5.417,11.959 11.959,5.417 20,5.417 C28.041,5.417 34.583,11.959 34.583,20 C34.583,28.041 28.041,34.583 20,34.583 C11.959,34.583 5.417,28.041 5.417,20 z M2.5,20 C2.5,29.664 10.336,37.5 20,37.5 C29.664,37.5 37.5,29.664 37.5,20 C37.5,10.336 29.664,2.5 20,2.5 C10.336,2.5 2.5,10.336 2.5,20 z M20,17.083 L26.562,23.646 L28.75,21.419 L20,12.708 L11.25,21.419 L13.438,23.646 L20,17.083 z"
+            fill="#000000" fill-opacity="0.523"></path>
+        </g>
+        </symbol>
+        <symbol viewBox="0, 0, 512, 512" id="icon-linkedin">
+        <title>icon-linkedin</title>
+        <g id="icon-linkedin-Layer_1">
+            <path
+            d="M50.473,50 L50.473,462 L462.473,462 L462.473,50 L50.473,50 z M181.522,392.99 L124.986,392.99 L124.986,210.336 L181.522,210.336 L181.522,392.99 z M152.984,186.417 C134.52,186.417 119.552,171.327 119.552,152.713 C119.552,134.099 134.52,119.009 152.984,119.009 C171.447,119.009 186.416,134.098 186.416,152.713 C186.416,171.328 171.447,186.417 152.984,186.417 z M393.394,392.99 L337.132,392.99 C337.132,392.99 337.132,323.408 337.132,297.109 C337.132,270.813 327.142,256.135 306.35,256.135 C283.721,256.135 271.898,271.424 271.898,297.109 C271.898,325.242 271.898,392.99 271.898,392.99 L217.673,392.99 L217.673,210.336 L271.898,210.336 L271.898,234.935 C271.898,234.935 288.207,204.764 326.938,204.764 C365.671,204.764 393.394,228.412 393.394,277.336 C393.394,326.262 393.394,392.99 393.394,392.99 z"
+            fill="#FFFFFF" id="icon-linkedin-linkedin-square-icon"></path>
+        </g>
+        </symbol>
+        <symbol viewBox="0, 0, 62, 36.643" id="icon-menu">
+        <title>icon-menu</title>
+        <g id="icon-menu-Layer_1">
+            <path
+            d="M2.63,15.321 L59.37,15.321 C60.822,15.321 62,16.665 62,18.321 L62,18.321 C62,19.978 60.822,21.321 59.37,21.321 L2.63,21.321 C1.178,21.321 0,19.978 0,18.321 L0,18.321 C0,16.665 1.178,15.321 2.63,15.321 z"
+            fill="#FFFFFF" class="middle-bar"></path>
+            <path
+            d="M2.63,0 L59.37,0 C60.822,0 62,1.343 62,3 L62,3 C62,4.657 60.822,6 59.37,6 L2.63,6 C1.178,6 0,4.657 0,3 L0,3 C0,1.343 1.178,0 2.63,0 z"
+            fill="#FFFFFF" class="top-bar"></path>
+            <path
+            d="M2.63,30.643 L59.37,30.643 C60.822,30.643 62,31.986 62,33.643 L62,33.643 C62,35.3 60.822,36.643 59.37,36.643 L2.63,36.643 C1.178,36.643 0,35.3 0,33.643 L0,33.643 C0,31.986 1.178,30.643 2.63,30.643 z"
+            fill="#FFFFFF" class="bottom-bar"></path>
+        </g>
+        </symbol>
+        <symbol viewBox="0, 0, 47.977, 41.647" id="icon-search">
+        <title>icon-search</title>
+        <g id="icon-search-Layer_1">
+            <path
+            d="M15.5,-0 C24.06,0 31,6.94 31,15.5 C30.983,18.454 30.175,21.34 28.519,23.791 L46.648,36.962 C47.963,37.918 48.372,39.598 47.56,40.715 C46.749,41.833 45.024,41.963 43.709,41.007 L25.206,27.564 C22.388,29.869 19.075,30.819 15.5,31 C6.94,31 0,24.06 0,15.5 C-0,6.94 6.94,0 15.5,0 z M27.073,25.747 L27.036,25.784 C26.609,26.432 26.045,26.9 25.446,27.374 L25.422,27.398 C26.118,26.981 26.573,26.365 27.073,25.747 z M15.5,5 C9.701,5 5,9.701 5,15.5 C5,21.299 9.701,26 15.5,26 C17.398,25.964 19.33,25.526 20.921,24.451 L20.921,24.451 L20.927,24.448 L22.081,23.669 C24.041,21.602 23.28,22.571 24.49,20.864 L24.49,20.864 L24.49,20.864 C25.588,19.293 25.906,17.367 26,15.5 C26,9.701 21.299,5 15.5,5 z"
+            fill="#FFFFFF"></path>
+        </g>
+        </symbol>
+        <symbol viewBox="0, 0, 512, 512" id="icon-twitter">
+        <title>icon-twitter</title>
+        <g id="icon-twitter-Layer_1">
+            <path
+            d="M50,50 L50,462 L462,462 L462,50 L50,50 z M370.942,207.125 C374.495,286.184 315.534,374.328 211.174,374.328 C179.431,374.328 149.885,365.023 125.011,349.075 C154.831,352.59 184.596,344.317 208.228,325.797 C183.632,325.344 162.872,309.094 155.72,286.762 C164.528,288.446 173.193,287.952 181.103,285.8 C154.073,280.367 135.411,256.016 136.02,229.974 C143.597,234.185 152.265,236.714 161.48,237.006 C136.446,220.276 129.36,187.22 144.084,161.961 C171.807,195.967 213.227,218.346 259.941,220.69 C251.742,185.53 278.415,151.671 314.696,151.671 C330.864,151.671 345.472,158.496 355.725,169.421 C368.529,166.901 380.558,162.223 391.419,155.782 C387.222,168.908 378.309,179.923 366.704,186.88 C378.074,185.523 388.908,182.501 398.988,178.029 C391.454,189.301 381.926,199.201 370.942,207.125 z"
+            fill="#FFFFFF" id="icon-twitter-twitter-2-icon"></path>
+        </g>
+        </symbol>
+        <symbol viewBox="0, 0, 250, 40" id="logo-white">
+        <title>logo-white</title>
+        <g id="logo-white-Layer_1">
+            <path
+            d="M194.783,2.459 L173.475,2.459 L173.475,7.352 L181.504,7.352 L181.504,37.315 L186.757,37.315 L186.757,7.352 L194.783,7.352 L194.783,2.459 z M163.474,26.669 L138.084,0.071 L138.084,37.317 L143.335,37.317 L143.335,12.881 L168.725,39.486 L168.725,2.458 L163.474,2.458 L163.474,26.669 z M241.286,16.311 L238.859,15.366 C236.764,14.572 234.443,13.244 234.481,11.006 C234.486,8.44 237.123,6.726 239.616,6.724 C242.021,6.748 243.379,7.656 244.599,9.656 L244.862,10.103 L245.309,9.835 L249.105,7.559 L248.859,7.119 C246.945,3.695 243.645,1.732 239.707,1.741 C234.395,1.751 229.237,5.181 229.23,11.006 C229.229,16.033 233.022,18.4 236.899,20.05 L239.234,21.037 C242.157,22.266 244.757,23.69 244.749,26.977 C244.741,30.273 242.353,33.046 239.032,33.051 C235.678,33.04 233.005,30.619 232.999,27.235 C232.999,27.223 233.001,27.2 233.001,27.174 L233.024,26.51 L227.647,27.645 L227.71,28.12 C228.447,33.778 232.934,38.039 238.673,38.035 C244.98,38.024 249.989,33.406 250,26.977 C250.022,21.058 246.135,18.183 241.286,16.311 z M214.243,23.944 L203.807,23.944 L209.026,12.068 L214.243,23.944 z M192.068,37.315 L197.739,37.315 L201.597,28.84 L216.451,28.84 L220.31,37.315 L225.978,37.315 L209.025,0.299 L192.068,37.315 z M122.785,23.946 L112.347,23.946 L117.567,12.068 L122.785,23.946 z M100.612,37.315 L106.282,37.315 L110.137,28.84 L124.994,28.84 L128.851,37.315 L134.521,37.315 L117.566,0.297 L100.612,37.315 z M100.754,2.459 L91.056,26.621 L81.314,2.459 L75.571,2.459 L91.059,39.953 L106.497,2.459 L100.754,2.459 z M25.389,27.045 L-0,0.442 L-0,37.79 L5.31,37.79 L5.31,13.398 L30.699,40 L30.699,2.877 L25.389,2.877 L25.389,27.045"
+            fill="#FFFFFE"></path>
+            <path
+            d="M73.727,13.933 C71.529,8.116 66.623,3.649 60.536,2.058 C58.968,1.647 57.331,1.406 55.635,1.406 C44.943,1.406 36.278,10.073 36.278,20.762 C36.278,25.677 38.126,30.15 41.144,33.565 C40.34,31.437 39.868,29.141 39.88,26.733 C39.903,21.939 41.614,16.682 45.158,12.894 C46.816,11.122 50.048,8.677 55.043,8.677 C61.67,8.677 67.044,14.048 67.044,20.679 C67.044,27.308 61.637,32.406 54.769,32.406 C51.831,32.406 48.271,30.727 45.259,27.713 C46.719,34.962 53.247,38.95 58.977,38.95 C67.51,38.95 74.99,30.662 74.99,20.762 C74.99,18.355 74.531,16.058 73.727,13.933"
+            fill="#B09464"></path>
+        </g>
+        </symbol>
+        <symbol viewBox="0, 0, 35.401, 79.123" id="slider-arrow-left-gray">
+        <title>slider-arrow-left-gray</title>
+        <g id="slider-arrow-left-gray-Layer_1">
+            <path
+            d="M35.388,-0 L35.389,6.052 L23.108,19.783 L5.414,39.567 L23.114,59.345 L35.4,73.072 L35.401,79.123 L17.7,59.345 L-0,39.567 L17.694,19.783 L35.388,-0 z"
+            fill="#808184"></path>
+        </g>
+        </symbol>
+        <symbol viewBox="0, 0, 35.401, 79.123" id="slider-arrow-left">
+        <title>slider-arrow-left</title>
+        <g id="slider-arrow-left-Layer_1">
+            <path
+            d="M35.388,0 L35.389,6.052 L23.108,19.783 L5.414,39.567 L23.114,59.345 L35.4,73.072 L35.401,79.123 L17.7,59.345 L-0,39.567 L17.694,19.783 L35.388,0 z"
+            fill="#FFFFFF"></path>
+        </g>
+        </symbol>
+        <symbol viewBox="0, 0, 35.401, 79.123" id="slider-arrow-right-gray">
+        <title>slider-arrow-right-gray</title>
+        <g id="slider-arrow-right-gray-Layer_1">
+            <path
+            d="M0.012,-0 L0.011,6.052 L12.292,19.783 L29.987,39.567 L12.286,59.345 L0.001,73.072 L-0,79.123 L17.7,59.345 L35.401,39.567 L17.706,19.783 L0.012,-0 z"
+            fill="#808184"></path>
+        </g>
+        </symbol>
+        <symbol viewBox="0, 0, 35.401, 79.123" id="slider-arrow-right">
+        <title>slider-arrow-right</title>
+        <g id="slider-arrow-right-Layer_1">
+            <path
+            d="M0.012,0 L0.011,6.052 L12.292,19.783 L29.987,39.567 L12.286,59.345 L0.001,73.072 L-0,79.123 L17.7,59.345 L35.401,39.567 L17.706,19.783 L0.012,0 z"
+            fill="#FFFFFF"></path>
+        </g>
+        </symbol>
+    </svg>
+  <!--<![endif]-->
+    <div id="container">
+        <style type="text/css">
+        @media (min-width: 768px) {
+            .vc_col-sm-3 {
+            width: 25%;
+            float: left;
+            }
+        }
+        </style>
+        <header class="header" role="banner" id="top" style="background: #1A1360 !important;position: fixed;">
+            <div id="inner-header" class="wrap cf">
+                <p id="logo" class="h1 logo">
+                    <a href="/" rel="nofollow">
+                        <img src="{% static 'img/logo4.png' %}" alt="BankingBook Analytics" width="190px">
+                    </a>
+                </p>
+                <a href="#menu" class="icon-menu nav-toggle" style="font-size:26px;margin-top:17px">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+                        width="62" height="62" viewBox="0, 0, 62, 62">
+                        <g id="Layer_1" class="icon-menu-svg">
+                        <g class="hamburger">
+                            <path
+                            d="M2.63,27.999 L59.37,27.999 C60.822,27.999 62,29.344 62,30.999 L62,30.999 C62,32.656 60.822,34 59.37,34 L2.63,34 C1.178,34 0,32.656 0,30.999 L0,30.999 C0,29.344 1.178,27.999 2.63,27.999 z"
+                            fill="#FFFFFF"></path>
+                            <path
+                            d="M2.63,43.321 L59.37,43.321 C60.822,43.321 62,44.664 62,46.321 L62,46.321 C62,47.978 60.822,49.321 59.37,49.321 L2.63,49.321 C1.178,49.321 0,47.978 0,46.321 L0,46.321 C0,44.664 1.178,43.321 2.63,43.321 z"
+                            fill="#FFFFFF"></path>
+                            <path
+                            d="M2.63,12.678 L59.37,12.678 C60.822,12.678 62,14.021 62,15.678 L62,15.678 C62,17.335 60.822,18.678 59.37,18.678 L2.63,18.678 C1.178,18.678 0,17.335 0,15.678 L0,15.678 C0,14.021 1.178,12.678 2.63,12.678 z"
+                            fill="#FFFFFF"></path>
+                        </g>
+                        <g class="close">
+                            <path
+                            d="M13.061,8.818 L53.182,48.939 C54.209,49.966 54.092,51.749 52.92,52.92 L52.92,52.92 C51.749,54.092 49.966,54.209 48.939,53.182 L8.818,13.061 C7.791,12.034 7.908,10.251 9.08,9.08 L9.08,9.08 C10.251,7.908 12.034,7.791 13.061,8.818 z"
+                            fill="#FFFFFF"></path>
+                            <path
+                            d="M8.818,48.939 L48.939,8.818 C49.966,7.791 51.749,7.908 52.92,9.08 L52.92,9.08 C54.092,10.251 54.209,12.034 53.182,13.061 L13.061,53.182 C12.034,54.209 10.251,54.092 9.08,52.92 L9.08,52.92 C7.908,51.749 7.791,49.966 8.818,48.939 z"
+                            fill="#FFFFFF"></path>
+                        </g>
+                        </g>
+                    </svg>
+                    <span>Menu</span>
+                </a>
+                <nav id="menu" role="navigation" class="slide-menu-top" style="top: 4em; max-width: 27em; display: none;">
+                    <ul id="menu-main-menu" class="nav top-nav cf" style="overflow-y:auto;max-height:500px;position: relative;">            
+                        <li class="menu-item-has-children">
+                            <a href="#expandmenu">TECHNOLOGY SOLUTIONS</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="/ECAPLeader">ECAPLeader
+                                        <i class="small-letter" style="font-style: normal;position: relative;font-size: 12px;top: -5px;">TM</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/ModelTek">
+                                        ModelTek
+                                        <i class="small-letter" style="font-style: normal;position: relative;font-size: 12px;top: -5px;">TM</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/ScenarioFrontier">
+                                        ScenarioFrontier
+                                        <i class="small-letter" style="font-style: normal;position: relative;font-size: 12px;top: -5px;">TM</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/BranchScape">
+                                        BranchScape
+                                        <i class="small-letter" style="font-style: normal;position: relative;font-size: 12px;top: -5px;">®</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/CreditStream">
+                                        CreditStream
+                                        <i class="small-letter" style="font-style: normal;position: relative;font-size: 12px;top: -5px;">®</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/MortgageRetainer">
+                                        MortgageRetainer
+                                        <i class="small-letter" style="font-style: normal;position: relative;font-size: 12px;top: -5px;">®</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/RetailEdge">
+                                        RetailEdge
+                                        <i class="small-letter" style="font-style: normal;position: relative;font-size: 12px;top: -5px;">®</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#expandmenu">CYBER SECURITY SERVICES</a>
+                            <ul class="sub-menu">
+                                <li><a href="/Cyber_security/#Assessment">Cyber Risk Assessment</a></li>
+                                <li><a href="/Cyber_security/#DAIR">Cyber Risk Quantification Using DAIR</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#expandmenu">REGULATORY COMPLIANCE SERVICES</a>
+                            <ul class="sub-menu">
+                                <li><a href="/Regulatory_Compliance/#Basel">Basel Compliance</a></li>
+                                <li><a href="/Regulatory_Compliance/#Federal">Implementation of Federal Reserve’s Requirements</a></li>
+                                <li><a href="/Regulatory_Compliance/#IFRS_CECL">Implementation of IFRS 9 and CECL Requirements</a></li>
+                                <li><a href="/Regulatory_Compliance/#Models">Independent Models Validation</a></li>
+                            </ul>
+                        </li>            
+                        <li class="menu-item-has-children">
+                            <a href="#expandmenu">PRICING & PROFITABILITY SERVICES</a>
+                            <ul class="sub-menu">
+                                <li><a href="/Pricing_Profitability/#Branch">Branch Sales Optimization</a></li>
+                                <li><a href="/Pricing_Profitability/#Middle_Market">Middle-Market Banking Optimization</a></li>
+                                <li><a href="/Pricing_Profitability/#SME_Commercial">Commercial Loan Pricing</a></li>
+                                <li><a href="/Pricing_Profitability/#Retail">Retail Pricing</a></li>
+                            </ul>
+                        </li>            
+                        <li class="menu-item-has-children">
+                            <a href="#expandmenu">FINANCE, TREASURY & RISK SERVICES</a>
+                            <ul class="sub-menu">
+                                <li><a href="/Finance/#ALM">Asset/Liability Management (ALM)</a></li>
+                                <li><a href="/Finance/#Credit">Credit Scoring and Portfolio Management</a></li>
+                                <li><a href="/Finance/#Liquidity">Liquidity Management</a></li>
+                                <li><a href="/Finance/#Responding">Responding to Rate Change</a></li>
+                                <li><a href="/Finance/#Revenue">Revenue and PPNR Modelling</a></li>
+                                <li><a href="/Finance/#Comprehensive">Comprehensive Capital Management and Stress Testing</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-seperator menu-item menu-item-type-custom menu-item-object-custom"></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="/insights">FEATURED INSIGHTS</a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                        <a href="/news/">NEWS</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="/events/">EVENTS</a>
+                        </li>
+                        <li class="menu-seperator menu-item menu-item-type-custom menu-item-object-custom"></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="/aboutus">ABOUT US</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="/contactus">CONTACT US</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="/partner">PARTNER WITH BBA</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#search" class="icon-search open-searchbox" style="margin-top:17px">
+                <svg viewBox="0 0 100 100">
+                    <use xlink:href="#icon-search"></use>
+                </svg>
+                <span>Search</span>
+                </a>
+            </div>
+            <div id="search" class="white-popup cf mfp-hide">
+                <h4>Search for:</h4>
+                <div id="search-container" class="search-container">
+                <form role="search" method="get" id="searchform" action="/">
+                    <label class="screen-reader-text" for="s">Search for:</label>
+                    <input id="s" name="s" value="" placeholder="I am looking for..." type="text">
+                    <input type="submit" id="searchsubmit" class="button" value="Search">
+                </form>
+                </div>
+            </div>
+        </header>
+
+        {% block content %}
+        {% endblock content%}
+
+    </div>
+  
+    <style type="text/css">
+    #footer ul li a {
+        font-size: 14px;
+    }
+
+    @media (min-width: 1200px) {
+        #footer {
+        padding-left: 5%;
+        padding-right: 5%;
+        }
+    }
+    </style>
+    <footer class="footer" role="contentinfo" id="footer" style="min-height: 900px;padding-top:50px;">
+        <div class="cf">
+            <a href="#top" class="back-to-top" style="display: none;">Back to top</a>            
+            <div class="footer_top_left m-all t-1of4 d-1of4 ">
+                <h4 class="widget-title">TECHNOLOGY SOLUTIONS</h4>
+                <ul id="menu-menu4footer" class="menu">
+                <li id="menu-item-4467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4467">
+                    <a href="/ECAPLeader">ECAPLeader
+                    <i class="small-letter" style="font-style: normal;position: relative;font-size: 8px;top: -5px;">TM</i>
+                    </a>
+                </li>
+                <li id="menu-item-4467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4467">
+                    <a href="/ModelTek">ModelTek
+                    <i class="small-letter" style="font-style: normal;position: relative;font-size: 8px;top: -5px;">TM</i>
+                    </a>
+                </li>
+                <li id="menu-item-4467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4467">
+                    <a href="/ScenarioFrontier">ScenarioFrontier
+                    <i class="small-letter" style="font-style: normal;position: relative;font-size: 8px;top: -5px;">TM</i>
+                    </a>
+                </li>
+                <li id="menu-item-4467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4467">
+                    <a href="/BranchScape">BranchScape
+                    <i class="small-letter" style="font-style: normal;position: relative;font-size: 8px;top: -5px;">®</i>
+                    </a>
+                </li>
+                <li id="menu-item-4467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4467">
+                    <a href="/CreditStream">CreditStream
+                    <i class="small-letter" style="font-style: normal;position: relative;font-size: 8px;top: -5px;">®</i>
+                    </a>
+                </li>
+                <li id="menu-item-4467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4467">
+                    <a href="/MortgageRetainer">MortgageRetainer
+                    <i class="small-letter" style="font-style: normal;position: relative;font-size: 8px;top: -5px;">®</i>
+                    </a>
+                </li>
+                <li id="menu-item-4467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4467">
+                    <a href="/RetailEdge">RetailEdge
+                    <i class="small-letter" style="font-style: normal;position: relative;font-size: 8px;top: -5px;">®</i>
+                    </a>
+                </li>
+                </ul>
+                <a href="/Cyber_security"><h4 class="widget-title">CYBER SECURITY SERVICES</h4></a>
+                <ul id="menu-menu6footer" class="menu">
+                    <li id="menu-item-4836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4836">
+                        <a href="/Cyber_security/#Assessment">Cyber Risk Assessment</a>
+                    </li>
+                    <li id="menu-item-4838" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4838">
+                        <a href="/Cyber_security/#DAIR">Cyber Risk Quantification Using DAIR</a>
+                    </li>              
+                </ul>
+                <a href="/Regulatory_Compliance"><h4 class="widget-title">REGULATORY COMPLIANCE SERVICES</h4></a>
+                <ul id="menu-menu2footer" class="menu">
+                    <li id="menu-item-5646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5646">
+                        <a href="/Regulatory_Compliance/#Basel">Basel Compliance</a>
+                    </li>
+                    <li id="menu-item-5646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5646">
+                        <a href="/Regulatory_Compliance/#Federal">Implementation of Federal Reserve’s Requirements</a>
+                    </li>
+                    <li id="menu-item-5646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5646">
+                        <a href="/Regulatory_Compliance/#IFRS_CECL">Implementation of IFRS 9 and CECL Requirements</a>
+                    </li>
+                    <li id="menu-item-7263" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7263">
+                        <a href="/Regulatory_Compliance/#Models">Independent Models Validation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_top_right m-all t-1of4 d-1of4 ">                
+                <a href="/Pricing_Profitability"><h4 class="widget-title">PRICING & PROFITABILITY SERVICES</h4></a>
+                <ul id="menu-menu2footer" class="menu">
+                    <li id="menu-item-7263" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7263">
+                        <a href="/Pricing_Profitability/#Branch">Branch Sales Optimization</a>
+                    </li>
+                    <li id="menu-item-5646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5646">
+                        <a href="/Pricing_Profitability/#Middle_Market">Middle-Market Banking Optimization</a>
+                    </li>
+                    <li id="menu-item-7263" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7263">
+                        <a href="/Pricing_Profitability/#SME_Commercial">Commercial Loan Pricing</a>
+                    </li>
+                    <li id="menu-item-5646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5646">
+                        <a href="/Pricing_Profitability/#Retail">Retail Pricing</a>
+                    </li>
+                </ul>
+                <a href="/Finance"><h4 class="widget-title">FINANCE, TREASURY & RISK SERVICES</h4></a> 
+                <ul id="menu-menu2footer" class="menu">
+                    <li id="menu-item-7263" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7263">
+                        <a href="/Finance/#ALM">Asset/Liability Management (ALM)</a>
+                    </li>
+                    <li id="menu-item-5646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5646">
+                        <a href="/Finance/#Credit">Credit Scoring and Portfolio Management</a>
+                    </li>
+                    <li id="menu-item-5646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5646">
+                        <a href="/Finance/#Liquidity">Liquidity Management</a>
+                    </li>
+                    <li id="menu-item-5646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5646">
+                        <a href="/Finance/#Responding">Responding to Rate Change</a>
+                    </li>
+                    <li id="menu-item-5646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5646">
+                        <a href="/Finance/#Revenue">Revenue and PPNR Modelling</a>
+                    </li>
+                    <li id="menu-item-5646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5646">
+                        <a href="/Finance/#Comprehensive">Comprehensive Capital Management and Stress Testing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+        <div class="cf" style="padding-top:30px;">
+            <div class="footer_down_left m-all t-1of4 d-1of4">   
+                <a href="/insights"><h4 class="widget-title">FEATURED INSIGHTS</h4></a>
+                <a href="/news"><h4 class="widget-title">NEWS</h4></a>
+                <a href="/events"><h4 class="widget-title">EVENTS</h4></a>           
+                <a href="/aboutus"><h4 class="widget-title">ABOUT US</h4></a>
+                <a href="/contactus"><h4 class="widget-title">CONTACT US</h4></a>
+                <a href="/partner"><h4 class="widget-title">PARTNER WITH BBA</h4></a>
+                <ul id="menu-menu6footer" class="menu" style="font-size:13px;margin-top:30px">
+                    <a href="/cookie-notice-and-privacy-policy">
+                        <li style="font-weight: bold;" id="menu-item-4836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4836">
+                        Cookie Notice & Privacy Policy
+                        </li>
+                    </a>
+                    <a href="/terms">
+                        <li style="font-weight: bold;" id="menu-item-4836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4836">
+                        Terms of Use
+                        </li>
+                    </a>
+                    <a href="/GDPR">
+                        <li style="font-weight: bold;" id="menu-item-4836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4836">
+                        GDPR compliance
+                        </li>
+                    </a>
+                    <li id="menu-item-4838" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4838">
+                        © 2018 – 2020 BankingBook Analytics, Inc.
+                    </li>
+                    <li id="menu-item-4839" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4839">
+                        All Rights Reserved.
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_down_right m-all t-1of4 d-1of4">
+                <iframe
+                src="https://www.youtube.com/embed/EGbxH9e33Ok?controls=0&rel=0&disablekb=1&showinfo=0&modestbranding=0&html5=1&iv_load_policy=3&autoplay=0&end=0&loop=0&playsinline=0&start=0&nocookie=false&enablejsapi=1&origin=https%3A%2F%2Fbba.to&widgetid=1"
+                width="300" height="160" frameborder="0" title="PriceTek® Deposits from Novantas Solutions"
+                webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                <div class="social-footer">
+                    <ul class="list-inline text-center social">
+                        <li>
+                            <a href="https://www.facebook.com/BBAnalytics/" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/Analytics_BB" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" target="_blank">
+                            <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCUPlBMdE7ILLefL2ICW38Kw/" target="_blank">
+                            <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/bankingbook-analytics/" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="m-all t-1of4 d-1of4">&nbsp;</div>
+        </div>
+    </footer>
+
+    <!-- TODO: Move to Template File. -->
+    <script>
+    var formDisplay = 1; var nfForms = nfForms || []; var form = []; form.id = '1'; form.settings = { "objectType": "Form Setting", "editActive": true, "title": "Contact form Button Modal", "key": "", "created_at": "2019-08-30 13:59:00", "default_label_pos": "above", "conditions": [], "show_title": 0, "clear_complete": "1", "hide_complete": "1", "wrapper_class": "", "element_class": "", "add_submit": "1", "logged_in": "", "not_logged_in_msg": "", "sub_limit_number": "", "sub_limit_msg": "", "calculations": [], "formContentData": [{ "order": 0, "cells": [{ "order": 0, "fields": ["full_name_1567173830149"], "width": "100" }] }, { "order": 1, "cells": [{ "order": 0, "fields": ["title_1567173904174"], "width": "100" }] }, { "order": 2, "cells": [{ "order": 0, "fields": ["institution_1567173933066"], "width": "100" }] }, { "order": 3, "cells": [{ "order": 0, "fields": ["email"], "width": "100" }] }, { "order": 4, "cells": [{ "order": 0, "fields": ["select_product_one_required_1567179298123"], "width": "100" }] }, { "order": 5, "cells": [{ "order": 0, "fields": ["phone_optional_1567174058909"], "width": "100" }] }, { "order": 6, "cells": [{ "order": 0, "fields": ["description_of_need_optional_1567174051975"], "width": "100" }] }, { "order": 7, "cells": [{ "order": 0, "fields": ["submit"], "width": "100" }] }], "container_styles_background-color": "", "container_styles_border": "", "container_styles_border-style": "", "container_styles_border-color": "", "container_styles_color": "", "container_styles_height": "", "container_styles_width": "", "container_styles_font-size": "", "container_styles_margin": "", "container_styles_padding": "", "container_styles_display": "", "container_styles_float": "", "container_styles_show_advanced_css": "0", "container_styles_advanced": "", "title_styles_background-color": "", "title_styles_border": "", "title_styles_border-style": "", "title_styles_border-color": "", "title_styles_color": "", "title_styles_height": "", "title_styles_width": "", "title_styles_font-size": "", "title_styles_margin": "", "title_styles_padding": "", "title_styles_display": "", "title_styles_float": "", "title_styles_show_advanced_css": "0", "title_styles_advanced": "", "row_styles_background-color": "", "row_styles_border": "", "row_styles_border-style": "", "row_styles_border-color": "", "row_styles_color": "", "row_styles_height": "", "row_styles_width": "", "row_styles_font-size": "", "row_styles_margin": "", "row_styles_padding": "", "row_styles_display": "", "row_styles_show_advanced_css": "0", "row_styles_advanced": "", "row-odd_styles_background-color": "", "row-odd_styles_border": "", "row-odd_styles_border-style": "", "row-odd_styles_border-color": "", "row-odd_styles_color": "", "row-odd_styles_height": "", "row-odd_styles_width": "", "row-odd_styles_font-size": "", "row-odd_styles_margin": "", "row-odd_styles_padding": "", "row-odd_styles_display": "", "row-odd_styles_show_advanced_css": "0", "row-odd_styles_advanced": "", "success-msg_styles_background-color": "", "success-msg_styles_border": "", "success-msg_styles_border-style": "", "success-msg_styles_border-color": "", "success-msg_styles_color": "", "success-msg_styles_height": "", "success-msg_styles_width": "", "success-msg_styles_font-size": "", "success-msg_styles_margin": "", "success-msg_styles_padding": "", "success-msg_styles_display": "", "success-msg_styles_show_advanced_css": "0", "success-msg_styles_advanced": "", "error_msg_styles_background-color": "", "error_msg_styles_border": "", "error_msg_styles_border-style": "", "error_msg_styles_border-color": "", "error_msg_styles_color": "", "error_msg_styles_height": "", "error_msg_styles_width": "", "error_msg_styles_font-size": "", "error_msg_styles_margin": "", "error_msg_styles_padding": "", "error_msg_styles_display": "", "error_msg_styles_show_advanced_css": "0", "error_msg_styles_advanced": "", "allow_public_link": 0, "embed_form": "", "changeEmailErrorMsg": "Please enter a valid email address!", "changeDateErrorMsg": "Please enter a valid date!", "confirmFieldErrorMsg": "These fields must match!", "fieldNumberNumMinError": "Number Min Error", "fieldNumberNumMaxError": "Number Max Error", "fieldNumberIncrementBy": "Please increment by ", "formErrorsCorrectErrors": "Please correct errors before submitting this form.", "validateRequiredField": "This is a required field.", "honeypotHoneypotError": "Honeypot Error", "fieldsMarkedRequired": "Fields marked with an <span class=\"ninja-forms-req-symbol\">*<\/span> are required", "currency": "", "unique_field_error": "A form with this value has already been submitted.", "drawerDisabled": false, "ninjaForms": "Ninja Forms", "fieldTextareaRTEInsertLink": "Insert Link", "fieldTextareaRTEInsertMedia": "Insert Media", "fieldTextareaRTESelectAFile": "Select a file", "fileUploadOldCodeFileUploadInProgress": "File Upload in Progress.", "fileUploadOldCodeFileUpload": "FILE UPLOAD", "currencySymbol": "&#36;", "thousands_sep": ",", "decimal_point": ".", "siteLocale": "en_US", "dateFormat": "m\/d\/Y", "startOfWeek": "1", "of": "of", "previousMonth": "Previous Month", "nextMonth": "Next Month", "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "monthsShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "weekdays": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "weekdaysShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "weekdaysMin": ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"], "currency_symbol": "", "beforeForm": "", "beforeFields": "", "afterFields": "", "afterForm": "" }; form.fields = [{ "objectType": "Field", "objectDomain": "fields", "editActive": false, "order": 1, "label": "Full Name", "key": "full_name_1567173830149", "type": "textbox", "created_at": "2019-08-30 13:59:00", "label_pos": "above", "required": 1, "placeholder": "", "default": "", "wrapper_class": "", "element_class": "", "container_class": "", "input_limit": "", "input_limit_type": "characters", "input_limit_msg": "Character(s) left", "manual_key": "", "disable_input": "", "admin_label": "", "help_text": "", "desc_text": "", "disable_browser_autocomplete": "", "mask": "", "custom_mask": "", "wrap_styles_background-color": "", "wrap_styles_border": "", "wrap_styles_border-style": "", "wrap_styles_border-color": "", "wrap_styles_color": "", "wrap_styles_height": "", "wrap_styles_width": "", "wrap_styles_font-size": "", "wrap_styles_margin": "", "wrap_styles_padding": "", "wrap_styles_display": "", "wrap_styles_float": "", "wrap_styles_show_advanced_css": 0, "wrap_styles_advanced": "", "label_styles_background-color": "", "label_styles_border": "", "label_styles_border-style": "", "label_styles_border-color": "", "label_styles_color": "", "label_styles_height": "", "label_styles_width": "", "label_styles_font-size": "", "label_styles_margin": "", "label_styles_padding": "", "label_styles_display": "", "label_styles_float": "", "label_styles_show_advanced_css": 0, "label_styles_advanced": "", "element_styles_background-color": "", "element_styles_border": "", "element_styles_border-style": "", "element_styles_border-color": "", "element_styles_color": "", "element_styles_height": "", "element_styles_width": "", "element_styles_font-size": "", "element_styles_margin": "", "element_styles_padding": "", "element_styles_display": "", "element_styles_float": "", "element_styles_show_advanced_css": 0, "element_styles_advanced": "", "cellcid": "c3613", "custom_name_attribute": "", "personally_identifiable": "", "value": "", "id": 1, "beforeField": "", "afterField": "", "parentType": "textbox", "element_templates": ["textbox", "input"], "old_classname": "", "wrap_template": "wrap" }, { "objectType": "Field", "objectDomain": "fields", "editActive": false, "order": 2, "type": "textbox", "label": "Title", "key": "title_1567173904174", "label_pos": "above", "required": 1, "default": "", "placeholder": "", "container_class": "", "element_class": "", "input_limit": "", "input_limit_type": "characters", "input_limit_msg": "Character(s) left", "manual_key": false, "admin_label": "", "help_text": "", "mask": "", "custom_mask": "", "custom_name_attribute": "", "personally_identifiable": "", "value": "", "drawerDisabled": false, "wrap_styles_show_advanced_css": 0, "label_styles_show_advanced_css": 0, "element_styles_show_advanced_css": 0, "cellcid": "c3617", "id": 5, "beforeField": "", "afterField": "", "parentType": "textbox", "element_templates": ["textbox", "input"], "old_classname": "", "wrap_template": "wrap" }, { "objectType": "Field", "objectDomain": "fields", "editActive": false, "order": 3, "type": "textbox", "label": "Institution", "key": "institution_1567173933066", "label_pos": "above", "required": 1, "default": "", "placeholder": "", "container_class": "", "element_class": "", "input_limit": "", "input_limit_type": "characters", "input_limit_msg": "Character(s) left", "manual_key": false, "admin_label": "", "help_text": "", "mask": "", "custom_mask": "", "custom_name_attribute": "", "personally_identifiable": "", "value": "", "drawerDisabled": false, "wrap_styles_show_advanced_css": 0, "label_styles_show_advanced_css": 0, "element_styles_show_advanced_css": 0, "cellcid": "c3620", "id": 6, "beforeField": "", "afterField": "", "parentType": "textbox", "element_templates": ["textbox", "input"], "old_classname": "", "wrap_template": "wrap" }, { "objectType": "Field", "objectDomain": "fields", "editActive": false, "order": 4, "label": "Email", "key": "email", "type": "email", "created_at": "2019-08-30 13:59:00", "label_pos": "above", "required": 1, "placeholder": "", "default": "", "wrapper_class": "", "element_class": "", "container_class": "", "admin_label": "", "help_text": "", "desc_text": "", "wrap_styles_background-color": "", "wrap_styles_border": "", "wrap_styles_border-style": "", "wrap_styles_border-color": "", "wrap_styles_color": "", "wrap_styles_height": "", "wrap_styles_width": "", "wrap_styles_font-size": "", "wrap_styles_margin": "", "wrap_styles_padding": "", "wrap_styles_display": "", "wrap_styles_float": "", "wrap_styles_show_advanced_css": 0, "wrap_styles_advanced": "", "label_styles_background-color": "", "label_styles_border": "", "label_styles_border-style": "", "label_styles_border-color": "", "label_styles_color": "", "label_styles_height": "", "label_styles_width": "", "label_styles_font-size": "", "label_styles_margin": "", "label_styles_padding": "", "label_styles_display": "", "label_styles_float": "", "label_styles_show_advanced_css": 0, "label_styles_advanced": "", "element_styles_background-color": "", "element_styles_border": "", "element_styles_border-style": "", "element_styles_border-color": "", "element_styles_color": "", "element_styles_height": "", "element_styles_width": "", "element_styles_font-size": "", "element_styles_margin": "", "element_styles_padding": "", "element_styles_display": "", "element_styles_float": "", "element_styles_show_advanced_css": 0, "element_styles_advanced": "", "cellcid": "c3623", "custom_name_attribute": "email_1", "personally_identifiable": 1, "value": "", "drawerDisabled": false, "id": 2, "beforeField": "", "afterField": "", "parentType": "email", "element_templates": ["email", "input"], "old_classname": "", "wrap_template": "wrap" }, { "objectType": "Field", "objectDomain": "fields", "editActive": false, "order": 5, "type": "listcheckbox", "label": "Select Product (one required)", "key": "select_product_one_required_1567179298123", "label_pos": "above", "required": 1, "options": [{ "errors": [], "max_options": 0, "label": "PriceTek Deposits", "value": "pricetek-deposits", "calc": "", "selected": 0, "order": 0, "settingModel": { "settings": false, "hide_merge_tags": false, "error": false, "name": "options", "type": "option-repeater", "label": "Options <a href=\"#\" class=\"nf-add-new\">Add New<\/a> <a href=\"#\" class=\"extra nf-open-import-tooltip\"><i class=\"fa fa-sign-in\" aria-hidden=\"true\"><\/i> Import<\/a>", "width": "full", "group": "", "value": [{ "label": "One", "value": "one", "calc": "", "selected": 0, "order": 0 }, { "label": "Two", "value": "two", "calc": "", "selected": 0, "order": 1 }, { "label": "Three", "value": "three", "calc": "", "selected": 0, "order": 2 }], "columns": { "label": { "header": "Label", "default": "" }, "value": { "header": "Value", "default": "" }, "calc": { "header": "Calc Value", "default": "" }, "selected": { "header": "<span class=\"dashicons dashicons-yes\"><\/span>", "default": 0 } } } }, { "errors": [], "max_options": 0, "label": "PriceTek Loans", "value": "pricetek-loans", "calc": "", "selected": 0, "order": 1, "settingModel": { "settings": false, "hide_merge_tags": false, "error": false, "name": "options", "type": "option-repeater", "label": "Options <a href=\"#\" class=\"nf-add-new\">Add New<\/a> <a href=\"#\" class=\"extra nf-open-import-tooltip\"><i class=\"fa fa-sign-in\" aria-hidden=\"true\"><\/i> Import<\/a>", "width": "full", "group": "", "value": [{ "label": "One", "value": "one", "calc": "", "selected": 0, "order": 0 }, { "label": "Two", "value": "two", "calc": "", "selected": 0, "order": 1 }, { "label": "Three", "value": "three", "calc": "", "selected": 0, "order": 2 }], "columns": { "label": { "header": "Label", "default": "" }, "value": { "header": "Value", "default": "" }, "calc": { "header": "Calc Value", "default": "" }, "selected": { "header": "<span class=\"dashicons dashicons-yes\"><\/span>", "default": 0 } } } }, { "errors": [], "max_options": 0, "label": "PriceTek Mortgage", "value": "pricetek-mortgage", "calc": "", "selected": 0, "order": 2, "settingModel": { "settings": false, "hide_merge_tags": false, "error": false, "name": "options", "type": "option-repeater", "label": "Options <a href=\"#\" class=\"nf-add-new\">Add New<\/a> <a href=\"#\" class=\"extra nf-open-import-tooltip\"><i class=\"fa fa-sign-in\" aria-hidden=\"true\"><\/i> Import<\/a>", "width": "full", "group": "", "value": [{ "label": "One", "value": "one", "calc": "", "selected": 0, "order": 0 }, { "label": "Two", "value": "two", "calc": "", "selected": 0, "order": 1 }, { "label": "Three", "value": "three", "calc": "", "selected": 0, "order": 2 }], "columns": { "label": { "header": "Label", "default": "" }, "value": { "header": "Value", "default": "" }, "calc": { "header": "Calc Value", "default": "" }, "selected": { "header": "<span class=\"dashicons dashicons-yes\"><\/span>", "default": 0 } } } }, { "errors": [], "max_options": 0, "order": 3, "new": false, "options": [], "label": "PriceTek Offer Engine", "value": "pricetek-offer-engine", "calc": "", "selected": 0, "settingModel": { "settings": false, "hide_merge_tags": false, "error": false, "name": "options", "type": "option-repeater", "label": "Options <a href=\"#\" class=\"nf-add-new\">Add New<\/a> <a href=\"#\" class=\"extra nf-open-import-tooltip\"><i class=\"fa fa-sign-in\" aria-hidden=\"true\"><\/i> Import<\/a>", "width": "full", "group": "", "value": [{ "label": "One", "value": "one", "calc": "", "selected": 0, "order": 0 }, { "label": "Two", "value": "two", "calc": "", "selected": 0, "order": 1 }, { "label": "Three", "value": "three", "calc": "", "selected": 0, "order": 2 }], "columns": { "label": { "header": "Label", "default": "" }, "value": { "header": "Value", "default": "" }, "calc": { "header": "Calc Value", "default": "" }, "selected": { "header": "<span class=\"dashicons dashicons-yes\"><\/span>", "default": 0 } } } }, { "errors": [], "max_options": 0, "order": 4, "new": false, "options": [], "label": "StrataScape", "value": "stratascape", "calc": "", "selected": 0, "settingModel": { "settings": false, "hide_merge_tags": false, "error": false, "name": "options", "type": "option-repeater", "label": "Options <a href=\"#\" class=\"nf-add-new\">Add New<\/a> <a href=\"#\" class=\"extra nf-open-import-tooltip\"><i class=\"fa fa-sign-in\" aria-hidden=\"true\"><\/i> Import<\/a>", "width": "full", "group": "", "value": [{ "label": "One", "value": "one", "calc": "", "selected": 0, "order": 0 }, { "label": "Two", "value": "two", "calc": "", "selected": 0, "order": 1 }, { "label": "Three", "value": "three", "calc": "", "selected": 0, "order": 2 }], "columns": { "label": { "header": "Label", "default": "" }, "value": { "header": "Value", "default": "" }, "calc": { "header": "Calc Value", "default": "" }, "selected": { "header": "<span class=\"dashicons dashicons-yes\"><\/span>", "default": 0 } } } }, { "errors": [], "max_options": 0, "order": 5, "new": false, "options": [], "label": "BankChoice Monitor", "value": "bankchoice-monitor", "calc": "", "selected": 0, "settingModel": { "settings": false, "hide_merge_tags": false, "error": false, "name": "options", "type": "option-repeater", "label": "Options <a href=\"#\" class=\"nf-add-new\">Add New<\/a> <a href=\"#\" class=\"extra nf-open-import-tooltip\"><i class=\"fa fa-sign-in\" aria-hidden=\"true\"><\/i> Import<\/a>", "width": "full", "group": "", "value": [{ "label": "One", "value": "one", "calc": "", "selected": 0, "order": 0 }, { "label": "Two", "value": "two", "calc": "", "selected": 0, "order": 1 }, { "label": "Three", "value": "three", "calc": "", "selected": 0, "order": 2 }], "columns": { "label": { "header": "Label", "default": "" }, "value": { "header": "Value", "default": "" }, "calc": { "header": "Calc Value", "default": "" }, "selected": { "header": "<span class=\"dashicons dashicons-yes\"><\/span>", "default": 0 } } } }, { "errors": [], "max_options": 0, "order": 6, "new": false, "options": [], "label": "SalesScape", "value": "salesscape", "calc": "", "selected": 0, "settingModel": { "settings": false, "hide_merge_tags": false, "error": false, "name": "options", "type": "option-repeater", "label": "Options <a href=\"#\" class=\"nf-add-new\">Add New<\/a> <a href=\"#\" class=\"extra nf-open-import-tooltip\"><i class=\"fa fa-sign-in\" aria-hidden=\"true\"><\/i> Import<\/a>", "width": "full", "group": "", "value": [{ "label": "One", "value": "one", "calc": "", "selected": 0, "order": 0 }, { "label": "Two", "value": "two", "calc": "", "selected": 0, "order": 1 }, { "label": "Three", "value": "three", "calc": "", "selected": 0, "order": 2 }], "columns": { "label": { "header": "Label", "default": "" }, "value": { "header": "Value", "default": "" }, "calc": { "header": "Calc Value", "default": "" }, "selected": { "header": "<span class=\"dashicons dashicons-yes\"><\/span>", "default": 0 } } } }, { "errors": [], "max_options": 0, "order": 7, "new": false, "options": [], "label": "MetricScape", "value": "metricscape", "calc": "", "selected": 0, "settingModel": { "settings": false, "hide_merge_tags": false, "error": false, "name": "options", "type": "option-repeater", "label": "Options <a href=\"#\" class=\"nf-add-new\">Add New<\/a> <a href=\"#\" class=\"extra nf-open-import-tooltip\"><i class=\"fa fa-sign-in\" aria-hidden=\"true\"><\/i> Import<\/a>", "width": "full", "group": "", "value": [{ "label": "One", "value": "one", "calc": "", "selected": 0, "order": 0 }, { "label": "Two", "value": "two", "calc": "", "selected": 0, "order": 1 }, { "label": "Three", "value": "three", "calc": "", "selected": 0, "order": 2 }], "columns": { "label": { "header": "Label", "default": "" }, "value": { "header": "Value", "default": "" }, "calc": { "header": "Calc Value", "default": "" }, "selected": { "header": "<span class=\"dashicons dashicons-yes\"><\/span>", "default": 0 } } } }], "container_class": "", "element_class": "", "admin_label": "", "help_text": "", "drawerDisabled": false, "wrap_styles_border": "", "wrap_styles_width": "", "wrap_styles_margin": "", "wrap_styles_padding": "", "wrap_styles_float": "", "wrap_styles_show_advanced_css": 0, "label_styles_border": "", "label_styles_width": "", "label_styles_font-size": "", "label_styles_margin": "", "label_styles_padding": "", "label_styles_float": "", "label_styles_show_advanced_css": 0, "element_styles_border": "", "element_styles_width": "", "element_styles_font-size": "", "element_styles_margin": "", "element_styles_padding": "", "element_styles_float": "", "element_styles_show_advanced_css": 0, "list_item_row_styles_border": "", "list_item_row_styles_height": "", "list_item_row_styles_width": "", "list_item_row_styles_font-size": "", "list_item_row_styles_margin": "", "list_item_row_styles_padding": "", "list_item_row_styles_float": "", "list_item_row_styles_show_advanced_css": 0, "list_item_label_styles_border": "", "list_item_label_styles_height": "", "list_item_label_styles_width": "", "list_item_label_styles_font-size": "", "list_item_label_styles_margin": "", "list_item_label_styles_padding": "", "list_item_label_styles_float": "", "list_item_label_styles_show_advanced_css": 0, "list_item_element_styles_border": "", "list_item_element_styles_height": "", "list_item_element_styles_width": "", "list_item_element_styles_font-size": "", "list_item_element_styles_margin": "", "list_item_element_styles_padding": "", "list_item_element_styles_float": "", "list_item_element_styles_show_advanced_css": 0, "cellcid": "c3626", "id": 7, "beforeField": "", "afterField": "", "value": "", "parentType": "list", "element_templates": ["listcheckbox", "input"], "old_classname": "list-checkbox", "wrap_template": "wrap" }, { "objectType": "Field", "objectDomain": "fields", "editActive": false, "order": 6, "type": "phone", "label": "Phone (optional)", "key": "phone_optional_1567174058909", "label_pos": "above", "required": false, "default": "", "placeholder": "", "container_class": "", "element_class": "", "input_limit": "", "input_limit_type": "characters", "input_limit_msg": "Character(s) left", "manual_key": false, "admin_label": "", "help_text": "", "mask": "", "custom_mask": "", "custom_name_attribute": "phone", "personally_identifiable": 1, "value": "", "drawerDisabled": false, "wrap_styles_show_advanced_css": 0, "label_styles_show_advanced_css": 0, "element_styles_show_advanced_css": 0, "cellcid": "c3629", "id": 8, "beforeField": "", "afterField": "", "parentType": "textbox", "element_templates": ["tel", "textbox", "input"], "old_classname": "", "wrap_template": "wrap" }, { "objectType": "Field", "objectDomain": "fields", "editActive": false, "order": 7, "type": "textarea", "label": "Description of Need (optional)", "key": "description_of_need_optional_1567174051975", "label_pos": "above", "required": false, "default": "", "placeholder": "", "container_class": "", "element_class": "", "input_limit": "", "input_limit_type": "characters", "input_limit_msg": "Character(s) left", "manual_key": false, "admin_label": "", "help_text": "", "textarea_rte": "", "disable_rte_mobile": "", "textarea_media": "", "value": "", "wrap_styles_show_advanced_css": 0, "label_styles_show_advanced_css": 0, "element_styles_show_advanced_css": 0, "cellcid": "c3632", "id": 9, "beforeField": "", "afterField": "", "parentType": "textarea", "element_templates": ["textarea", "input"], "old_classname": "", "wrap_template": "wrap" }, { "objectType": "Field", "objectDomain": "fields", "editActive": false, "order": 8, "label": "Submit", "key": "submit", "type": "submit", "created_at": "2019-08-30 13:59:00", "processing_label": "Processing", "container_class": "", "element_class": "", "wrap_styles_background-color": "", "wrap_styles_border": "", "wrap_styles_border-style": "", "wrap_styles_border-color": "", "wrap_styles_color": "", "wrap_styles_height": "", "wrap_styles_width": "", "wrap_styles_font-size": "", "wrap_styles_margin": "", "wrap_styles_padding": "", "wrap_styles_display": "", "wrap_styles_float": "", "wrap_styles_show_advanced_css": 0, "wrap_styles_advanced": "", "label_styles_background-color": "", "label_styles_border": "", "label_styles_border-style": "", "label_styles_border-color": "", "label_styles_color": "", "label_styles_height": "", "label_styles_width": "", "label_styles_font-size": "", "label_styles_margin": "", "label_styles_padding": "", "label_styles_display": "", "label_styles_float": "", "label_styles_show_advanced_css": 0, "label_styles_advanced": "", "element_styles_background-color": "", "element_styles_border": "", "element_styles_border-style": "", "element_styles_border-color": "", "element_styles_color": "", "element_styles_height": "", "element_styles_width": "", "element_styles_font-size": "", "element_styles_margin": "", "element_styles_padding": "", "element_styles_display": "", "element_styles_float": "", "element_styles_show_advanced_css": 0, "element_styles_advanced": "", "submit_element_hover_styles_background-color": "", "submit_element_hover_styles_border": "", "submit_element_hover_styles_border-style": "", "submit_element_hover_styles_border-color": "", "submit_element_hover_styles_color": "", "submit_element_hover_styles_height": "", "submit_element_hover_styles_width": "", "submit_element_hover_styles_font-size": "", "submit_element_hover_styles_margin": "", "submit_element_hover_styles_padding": "", "submit_element_hover_styles_display": "", "submit_element_hover_styles_float": "", "submit_element_hover_styles_show_advanced_css": 0, "submit_element_hover_styles_advanced": "", "cellcid": "c3635", "id": 4, "beforeField": "", "afterField": "", "value": "", "label_pos": "above", "parentType": "textbox", "element_templates": ["submit", "button", "input"], "old_classname": "", "wrap_template": "wrap-no-label" }]; nfForms.push(form);</script>
+    </script>
+    <script id="nf-tmpl-cell" type="text/template">
+        <nf-fields></nf-fields>
+    </script>
+
+    <script id="nf-tmpl-row" type="text/template">
+        <nf-cells></nf-cells>
+    </script>
+
+    <script type="text/javascript" src="{% static 'js/scripts.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.foobar.2.1.min.js' %}"></script>
+
+    <!-- Shortcodes Ultimate custom CSS - start -->
+    <style type="text/css">
+    .entry-content .su-spoiler-title {
+        color: #002c5c;
+        background: #e4e4e4;
+        min-height: 70px;
+        font-size: 1.2em;
+        line-height: 1em;
+        border-radius: 10px;
+        padding-left: 40px;
+        padding-top: 25px;
+    }
+
+    .su-spoiler-icon {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .su-spoiler-content {
+        padding: 0px;
+    }
+
+    img.opacity {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    img.opacity:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+    /*=============FOOTER===============*/
+    .footer-menu {
+        font-size: 0.7em;
+    }
+
+    .footer-utility-menu {
+        font-size: 0.7em;
+    }
+
+    .social-media-menu {
+        float: left;
+    }
+
+    .copyright {
+        font-size: 0.5em !important;
+    }
+
+    .form-post-filter {
+        font-size: 0.8em;
+    }
+
+    .footer_top_left, .footer_down_left{
+        margin-left: 18%;
+        width: 30%;
+    }
+    .footer_top_right, .footer_down_right{
+        width: 30%;
+    }
+    .social-footer{
+        margin-left: 10%;
+    }
+
+    @media only screen and (max-width: 750px) {
+        .back-to-top {
+            width: 100%;
+            display: block !important;
+            margin-bottom: 20px;
+        }
+
+        .footer_top_left, .footer_top_right, .footer_down_left, .footer_down_right, footer_social {
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .social-footer{
+            margin-left: 30%;
+        }
+        .insights-img{
+            width:40%;
+        }
+        .entry-content{
+            margin-left: 10%;
+            width: 80%;
+        }
+        .article-footer{
+            margin-left:10%;
+            width: 80%;
+        }
+    }
+    @media only screen and (min-width: 64em) {
+        #inner-footer {
+        max-width: 30em;
+        /*text-align: center;*/
+        }
+
+        .footer-utility-menu {
+        padding-left: 25em;
+        }
+
+        .social-media-menu {
+        float: right;
+        }
+
+        .copyright {
+        margin-left: 6.75em;
+        min-width: 15em;
+        }
+    }
+    </style>
+</body>
+
+</html>

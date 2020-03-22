@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% load static %}
+  
+{% block css %}
+    <title>News | BBA - BankingBook Analytics</title>
+  <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+{% endblock css %} 
+
+{% block content %} 
+    <div>
+      <div id="bg-1" class="hero-unit hero-post bg-news">
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <h1 class="title-us">
+              News
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article id="post-10080" class="cf post-10080 page type-page status-publish has-post-thumbnail hentry"
+      role="article" itemscope="" itemtype="http://schema.org/BlogPosting">
+      <header class="article-header">
+        <h1 class="page-title screen-reader-text">Home</h1>
+      </header>
+      <div class="wrap">
+      {% for each_news in news_list %}
+        <article class="cf news type-news status-publish has-post-thumbnail hentry tag-chase tag-hybrid-branch NewsCategories-quote" role="article">
+          <header class="article-header">
+            <div class="callout-post callout-post-news cf">
+              <h4>News</h4>
+            </div>
+            <h3 class="h4 clear">
+              <a target="blank" href="/news-sub/{{each_news.id}}"
+                rel="bookmark">{{each_news.headline}}</a></h3>
+            <p class="byline vcard">
+              <time class="updated" datetime="2019-12-10" pubdate="">{{each_news.date}}</time> </p>        
+          </header>   
+          <section class="entry-content cf">
+            <div class="m-3of4 t-3of4 d-3of4">    
+              <p>{{each_news.content}}</p>
+            </div>
+            <div class="m-1of4 t-1of4 d-1of4 last-col">
+              <img src="{% static 'img/' %}{{each_news.img_path}}" alt="Bankrate Logo" srcset="{% static 'img/' %}{{each_news.img_path}}"
+                sizes="(max-width: 300px) 100vw, 300px" width="300" height="68"> </div>
+          </section>
+        </article>
+        {% endfor %}
+      </div>
+    </article>
+{% endblock content %}

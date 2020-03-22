@@ -1,0 +1,333 @@
+{% extends 'base.html' %}
+
+{% load static %}
+  
+{% block css %}
+    {% if query %}
+        <title>You searched for {{query}} | BBA - BankingBook Analytics</title>
+        <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+    {% else %}
+        <title>BBA - BankingBook Analytics</title>
+        <script type="text/javascript">
+          try{Typekit.load();}catch(e){}
+        </script>
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+              
+        <style type="text/css" media="screen">
+          @media only screen and (min-width: 769px) {
+          .hero-bg-18972 { background-image: url("{% static 'img/central banks.jpg' %}") !important; background-size: 100% 100% !important;}
+          .hero-bg-18948 { background-image: url("{% static 'img/international-financial-centre-2.png' %}") !important; background-size: 100% 100% !important;}
+          .hero-bg-18884 { background-image: url("{% static 'img/homepage-slide4.png' %}") !important; background-size: 100% 100% !important;}
+          .hero-bg-18880 { background-image: url("{% static 'img/RBB.jpg' %}") !important; background-size: 100% 100% !important;}
+          .hero-bg-12782 { background-image: url("{% static 'img/photo_about_us_coworkers_team_discussion-e1526664455725.jpg' %}") !important; background-size: 100% 100% !important;}
+          .hero-bg-19753 { background-image: url("{% static 'img/slide-1.jpg' %}") !important; background-size: 100% 100% !important;}
+          }
+        </style>
+    {% endif %}
+{% endblock css %} 
+
+{% block content %}
+    {% if query %}
+        <div>
+          <div id="bg-1" class="bg-SearchResult">
+            <div class="wpb_text_column wpb_content_element ">
+              <div class="wpb_wrapper">
+                <h1 class="title-search">
+                  Search Results For: {{query}}
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% if not results %}
+        <div id="container">
+            <article id="post-not-found" class="hentry cf">
+              <div class="wrap cf">
+                <header class="article-header">
+                  <h2>No Search Result Found!</h2>
+                </header>
+                <section class="entry-content">
+                  <p>Try your search again:</p>
+
+                  <p></p><form role="search" method="get" id="searchform" action="/">
+                  <div>
+                    <input id="s" name="s" type="text" value="{{query}}" name="s" id="s">
+                    <input type="submit" id="searchsubmit" class="button" value="Search">
+                  </div>
+                </form><p></p>
+
+                </section>
+                <footer class="article-footer cf">
+                </footer>
+              </div>
+            </article>
+          </div>
+        {% else %}
+        <article id="post-10080" class="cf post-10080 page type-page status-publish has-post-thumbnail hentry"
+          role="article" itemscope="" itemtype="http://schema.org/BlogPosting">
+          <header class="article-header">
+            <h1 class="page-title screen-reader-text">Home</h1>
+          </header>
+          <div class="wrap cf" style="margin-top: 2em; position: relative;">
+            <div class="insights m-all t-2of3 d-2of3">
+              {% for result in results %}
+                <div class="callout-post callout-post-artilcle cf">
+                  <h4>{{ result.classif }}</h4>
+                  <p class="byline vcard">
+                    <time class="updated" datetime="2019-12-20" pubdate="">{{ result.date | date:"F d, Y" }}</time> </p>
+                  <p class="thumbnail m-all t-1of3 d-1of3">
+                    <img class="insights-img" src="../static/img/logo3.png">
+                    <img class="insights-img" src="../static/img/insights.png">
+                  </p>
+                  <div class="m-all t-2of3 d-2of3 last-col">      
+                    <h5><a target="blank" href="/insights-sub/{{ result.id }}"
+                        rel="bookmark">{{ result.headline }}</a></h5>
+                    <p>{{ result.content }}</p>
+                    <p class="tags">{{ result.reporter }}</p>
+                  </div>
+                </div>
+              {% endfor %}
+              {% if results.has_other_pages %}
+                <ul class="pagination">
+                  {% if results.has_previous %}
+                    <li><a href="?page={{ results.previous_page_number }}">&laquo;</a></li>
+                  {% else %}
+                    <li class="disabled"><span>&laquo;</span></li>
+                  {% endif %}
+                  {% for i in results.paginator.page_range %}
+                    {% if results.number == i %}
+                      <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                    {% else %}
+                      <li><a href="?page={{ i }}&s={{query}}">{{ i }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                  {% if results.has_next %}
+                    <li><a href="?page={{ results.next_page_number }}">&raquo;</a></li>
+                  {% else %}
+                    <li class="disabled"><span>&raquo;</span></li>
+                  {% endif %}
+                </ul>
+              {% endif %}
+            </div>
+
+            <footer class="article-footer cf">
+          
+            </footer>
+          
+          </div>
+        </article>
+        {% endif %}
+    {% else %}
+        <div class="owl-stage-outer" style="display: none;">
+            <div class="owl-controls">
+              <div class="owl-nav">
+                <div class="owl-prev" >prev</div>
+                <div class="owl-next" >next</div>
+              </div>
+              <div class="owl-dots" >
+                <div class="owl-dot active">
+                  <span></span>
+                </div>
+                <div class="owl-dot">
+                  <span></span>
+                </div>
+                <div class="owl-dot">
+                  <span></span>
+                </div>
+                <div class="owl-dot">
+                  <span></span>
+                </div>
+                <div class="owl-dot">
+                  <span></span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          
+        <div class="owl-carousel.home-carousel owl-carousel owl-theme owl-loaded" id="carousel" style="margin-top:100px">
+          <div class="hero-unit hero-post background-color-dark-purple hero-bg-19753"> 
+            <div class="hero-wrapper wrap">
+              <p class="category category-dark-purple">PERSPECTIVE</p>
+              <div class="hero-content-wrapper hero-content-wrapper-dark">
+                <h2>
+                  <a class="home_head" href="/slide1/2">
+                    2020: Creating a More Digital, Resilient Credit Union<br></a>
+                </h2>
+                <p class="excerpt">
+                  As benchmarks are reset, BankingBook examines the profound ways in which credit unions' Finance and Treasury functions will change in the new decade.
+                </p>
+                <p class="meta">
+                  <a href="/slide1/2">Read More...</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-unit hero-post background-color-dark-blue hero-bg-18972">          
+            <div class="hero-wrapper wrap">
+              <p class="category category-subscription">SUBSCRIPTION</p>
+              <div class="hero-content-wrapper hero-content-wrapper-dark">
+                <h2>
+                  <a class="home_head" href="/slide2">
+                    Quarterly Stress Testing: Base, Severe and Adversely Severe macroeconomic scenarios for US and Canadian clients
+                  </a>
+                </h2>
+                <p class="excerpt"></p>
+                <p class="meta">
+                  <a href="/slide2">Read More...</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero-unit hero-post background-color-dark-purple hero-bg-18948"> 
+            <div class="hero-wrapper wrap">
+              <p class="category category-dark-purple">PERSPECTIVE</p>
+              <div class="hero-content-wrapper hero-content-wrapper-dark">
+                <h2>
+                  <a class="home_head" href="/slide3/3">
+                    Cyber Resilience: Why your IT department’s cyber security plan is bound to fail<br></a>
+                </h2>
+                <p class="excerpt">
+                  Learn why cyber risk quantification is becoming a top priority for businesses and governments
+                </p>
+                <p class="meta">
+                  <a href="/slide3/3">Read More...</a>
+                </p>
+              </div>
+            </div>
+          </div>      
+          <div class="hero-unit hero-post background-color-dark-purple hero-bg-18884"> 
+            <div class="hero-wrapper wrap">
+              <p class="category category-yellow">REPORT</p>
+              <div class="hero-content-wrapper hero-content-wrapper-dark">
+                <h2><a class="home_head" href="/slide4/4">
+                  Liquidity risk at Credit Unions: Managing liquidity risk in a shrinking membership environment
+                </a></h2>
+                <p class="excerpt">
+                  This 2020 report surveys credit union membership trends and liquidity management approaches
+                </p>
+                <p class="meta"><a href="/slide4/4">Read More...</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-unit hero-post background-color-yellow hero-bg-18880">
+            <div class="hero-wrapper wrap">
+              <p class="category category-red">VIEWPOINT</p>
+              <div class="hero-content-wrapper hero-content-wrapper-dark">
+                <h2><a class="home_head" href="/slide5/5">
+                  BankingBook Viewpoint | Off-shoring Strategies
+                </a></h2>
+                <p class="excerpt">
+                  What does this mean for Canadian credit unions
+                </p>
+                <p class="meta"><a href="/slide5/5">Read More...</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-unit hero-post background-color-dark-purple hero-bg-12782">
+            <div class="hero-wrapper wrap">
+              <p class="category" style="background-color: #494949;">NEWS</p>
+              <div class="hero-content-wrapper hero-content-wrapper-dark">
+                <h2><a class="home_head" href="/slide6">
+                  BankingBook and Global Risk Institute present cyber risk quantification research at PRMIA’s 2019 Canadian Risk Forum, Montreal</a></h2>
+                <p class="excerpt"></p>
+                <p class="meta">
+                  <a href="/slide6">Read More...</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>  
+                    
+        <article id="post-10080" class="cf post-10080 page type-page status-publish has-post-thumbnail hentry" role="article" itemscope="" itemtype="http://schema.org/BlogPosting">
+          <header class="article-header">
+            <h1 class="page-title screen-reader-text">Home</h1>
+          </header>  
+          <section class="entry-content cf" itemprop="articleBody" style="background-color: #E0E6E9;">
+            <div class="wrap">
+              <!-- <svg viewBox="0 0 94 40">
+                    <use xlink:href="#bg-arrow-down"></use>
+                  </svg> -->
+              <div class="callout-post callout-post-article report m-all t-1of3 d-1of3 ">
+                <h4>article</h4>
+                <h5><a target="blank" href="/article1">{{ article_1.headline }}</a></h5>
+                <p>{{ article_1.content }}</p>
+              </div>
+              <div class="callout-post callout-post-article report m-all t-1of3 d-1of3 ">
+                <h4>article</h4>
+                <h5><a target="blank" href="/article2">{{ article_2.headline }}</a></h5>
+                <p>{{ article_2.content }}</p>
+              </div>
+              <div class="callout-post callout-post-article report m-all t-1of3 d-1of3 last-col">
+                <h4>article</h4>
+                <h5><a target="blank" href="/article3">{{ article_3.headline }}</a></h5>
+                <p>{{ article_3.content }}</p>
+              </div>
+              <div class="callout-post report m-all t-1of3 d-1of3 ">
+                <h4 style="background-color: #FFB700 !important;">report</h4>
+                <h5><a target="blank" href="/report1">{{ report_1.headline }}</a></h5>
+                <p>{{ report_1.content }}</p>
+              </div>
+              <div class="callout-post report m-all t-1of3 d-1of3 ">
+                <h4 style="background-color: #FFB700 !important;">report</h4>
+                <h5><a target="blank" href="/report2">{{ report_2.headline }}</a></h5>
+                <p>{{ report_2.content }}</p>
+              </div>
+              <div class="callout-post callout-post-article report m-all t-1of3 d-1of3 last-col">
+                <h4>article</h4>
+                <h5><a target="blank" href="/article4">{{ article_4.headline }}</a></h5>
+                <p>{{ article_4.content }}</p>
+              </div>
+              <div class="callout-post callout-post-event report m-all t-1of3 d-1of3">
+                <h4>webinar</h4>
+                <h5>
+                  <a target="blank" href="/webinar1" rel="bookmark">BANKINGBOOK WEBINAR SERIES 1</a>
+                </h5>
+                <p>Liquidity Risk Management on April 15, 2020 at 3:00 PM EST</p>
+              </div>
+              <div class="callout-post callout-post-event report m-all t-1of3 d-1of3">
+                <h4>webinar</h4>
+                <h5>
+                  <a target="blank" href="/webinar2" rel="bookmark">BANKINGBOOK WEBINAR SERIES 2</a>
+                </h5>
+                <p>Going Digital: The CU Transformation Road Map on June 3, 2020  at 3 pm EST</p>
+              </div>
+              <div class="callout-post callout-post-event report m-all t-1of3 d-1of3 last-col">
+                <h4>webinar</h4>
+                <h5>
+                  <a target="blank" href="/webinar3" rel="bookmark">BANKINGBOOK WEBINAR SERIES 3</a>
+                </h5>
+                <p>Enhancing Profitability at CUs: Alignment of Strategy with Capital on August 26, 2020 at 3:00 pm EST</p>
+              </div>
+              <div class="callout-post callout-post-news report m-all t-1of3 d-1of3 ">
+                <h4>news</h4>
+                <h5><a target="blank" href="/news-sub/1">{{news_1.headline}}</a></h5>
+                <p>The Office of the Superintendent of Financial Institutions (OSFI) set the Domestic Stability 
+                  Buffer (DSB) at 2.25% of total risk-weighted assets, effective April 30, 2020. This reflects 
+                  OSFI’s view that key vulnerabilities to Canada’s Domestic Systemically Important Banks (D-SIBs) 
+                  remain elevated.</p>
+              </div>
+              <div class="callout-post callout-post-news report m-all t-1of3 d-1of3 ">
+                <h4>news</h4>
+                <h5><a target="blank" href="/news-sub/2">{{news_2.headline}}</a></h5>
+                <p>Google plans to add chequing accounts from Citigroup to its Google Pay digital wallet in 2020. 
+                  Big tech companies have been pushing into other arenas such as finance and health care to gain 
+                  more access to consumer data. Google launched Google Wallet in 2011, now called Google Pay, 
+                  which lets users store credit and debit card information and use them to make mobile and digital 
+                  payments.</p>
+              </div>
+              <div class="callout-post callout-post-news report m-all t-1of3 d-1of3 last-col">
+                <h4>news</h4>
+                <h5><a target="blank" href="/news-sub/3">{{news_3.headline}}</a></h5>
+                <p>FSRA is very pleased to announce the membership for six new Stakeholder Advisory Committees 
+                  (SACs) that will provide input and advice to FSRA’s Board of Directors and help shape the future 
+                  of financial regulation in Ontario.</p>
+              </div>
+          
+            </div>
+          </section>
+        </article>
+    {% endif %}
+{% endblock content %}

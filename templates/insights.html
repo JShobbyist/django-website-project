@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% load static %}
+  
+{% block css %}
+    <title>Featured Insights | BBA - BankingBook Analytics</title>
+    <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+{% endblock css %} 
+
+{% block content %}
+    <div>
+      <div id="bg-1" class="hero-unit hero-post bg-Insights">
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <h1 class="title-us">
+              Featured Insights
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article id="post-10080" class="cf post-10080 page type-page status-publish has-post-thumbnail hentry"
+      role="article" itemscope="" itemtype="http://schema.org/BlogPosting">
+      <header class="article-header">
+        <h1 class="page-title screen-reader-text">Home</h1>
+      </header>
+      <div class="wrap cf" style="margin-top: 2em; position: relative;">
+        <div class="insights m-all t-2of3 d-2of3">
+          {% for insight in insights %}
+            <div class="callout-post callout-post-artilcle cf">
+              <h4>{{ insight.classif }}</h4>
+              <p class="byline vcard">
+                <time class="updated" datetime="2019-12-20" pubdate="">{{ insight.date | date:"F d, Y" }}</time> </p>
+              <p class="thumbnail m-all t-1of3 d-1of3">
+                <img class="insights-img" src="../static/img/logo3.png">
+                <img class="insights-img" src="../static/img/insights.png">
+              </p>
+              <div class="m-all t-2of3 d-2of3 last-col">      
+                <h5><a target="blank" href="/insights-sub/{{ insight.id }}"
+                    rel="bookmark">{{ insight.headline }}</a></h5>
+                <p>{{ insight.content }}</p>
+                <p class="tags">{{ insight.reporter }}</p>
+              </div>
+            </div>
+          {% endfor %}
+          {% if insights.has_other_pages %}
+            <ul class="pagination">
+              {% if insights.has_previous %}
+                <li><a href="?page={{ insights.previous_page_number }}">&laquo;</a></li>
+              {% else %}
+                <li class="disabled"><span>&laquo;</span></li>
+              {% endif %}
+              {% for i in insights.paginator.page_range %}
+                {% if insights.number == i %}
+                  <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                {% else %}
+                  <li><a href="?page={{ i }}">{{ i }}</a></li>
+                {% endif %}
+              {% endfor %}
+              {% if insights.has_next %}
+                <li><a href="?page={{ insights.next_page_number }}">&raquo;</a></li>
+              {% else %}
+                <li class="disabled"><span>&raquo;</span></li>
+              {% endif %}
+            </ul>
+          {% endif %}
+        </div>
+        <aside role="complementary" class="m-all t-1of3 d-1of3 last-col cf" id="sidebar">   
+          <h4>Search Criteria:</h4>
+          <form action="" method="post" class="form-post-filter">{% csrf_token %}
+            <p>
+              <input type="checkbox" name="bba_subscription" id="novantas-article" {% if bba_subscription == 'Subscription' %} checked {% endif %}> <label
+                for="bba-article">SUBSCRIPTION</label><br>
+              <input type="checkbox" name="bba_perspective" id="case-study" {% if bba_perspective == 'Perspective' %} checked {% endif %}> <label for="case-study">PERSPECTIVE</label><br>
+              <input type="checkbox" name="bba_report" id="datainsights" {% if bba_report == 'Report' %} checked {% endif %}> <label for="datainsights">REPORT</label><br>
+              <input type="checkbox" name="bba_article" id="novantas-viewpoint" {% if bba_article == 'Article' %} checked {% endif %}> <label
+                for="bba-viewpoint">ARTICLE</label><br>
+              <input type="checkbox" name="bba_case_study" id="novantas-perspective" {% if bba_case_study == 'CASE STUDIES' %} checked {% endif %}> <label
+                for="bba-perspective">CASE STUDIES</label><br>
+            </p>
+            <p><input type="submit" class="button button-dark-blue" value="Filter"></p>
+          </form>
+        </aside>
+
+        <footer class="article-footer cf">
+      
+        </footer>
+      
+      </div>
+    </article>
+{% endblock content %}
