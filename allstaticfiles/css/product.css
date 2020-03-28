@@ -1,0 +1,133 @@
+#bg-1{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important; 
+    margin-top: 100px;  
+}
+.bg-ScenarioFrontier{
+    background: url("../img/s3-news-tmp-394692-webinar_image--2x1--940.jpg") !important;
+}
+.bg-ECAPLeader{
+    background: url("../img/ECAPLeader-background.jpg") !important;
+}
+.bg-ModelTek{
+    background: url("../img/macbook-1093641_960_722.jpg") !important;
+}
+.bg-MortgageRetainer{
+    background: url("../img/new-brighton-1239724_960_720.jpg") !important;
+}
+.bg-CreditStream{
+    background: url("../img/skyscraper-3122210_960_720.jpg") !important;
+}
+.bg-RetailEdge{
+    background: url("../img/header_bg1.jpg") !important;
+}
+.bg-BranchScape{
+    background: url("../img/BranchScape-background.jpg") !important;
+}
+.bg-CyberSecurity{
+    background: url("../img/consulting.jpg") !important;
+}
+.bg-RegulatoryCompliance{
+    background: url("../img/images.jpg") !important;
+}
+.bg-PricingProfitability{
+    background: url("../img/PricingProfitability-background.jpg") !important;
+}
+.bg-Finance{
+    background: url("../img/r51Qhg.jpg") !important;
+}
+
+.title-product{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 100px;
+    margin-bottom: 0; 
+    font-size: 45px;
+}
+.section{
+    padding: 30px 0 0.5em 0 !important;
+}
+.alignleft{
+    margin-right: 1.5em;
+    margin-bottom: 40px;
+    position: relative;
+    float: left;
+}
+.case_div{
+    border: solid 1px #00263d; 
+    padding: 20px; 
+    margin: 5px; 
+    float: left; 
+    font-size: 13pt; 
+    width: 255px; 
+    height: 260px;
+}
+.case1_div{
+    border: solid 1px #00263d; 
+    padding: 20px; 
+    margin: 5px; 
+    float: left; 
+    font-size: 13pt; 
+    width: 255px; 
+    height: 545px;
+}
+.key_div{
+    margin-right: 10%;
+    position: relative;
+    float: left;
+}
+.key_div > ul{
+    margin-left: 3%;
+}
+.key_div > ul >li {
+    list-style-type: disc;
+}
+.key_div1{
+    margin-top: -1em !important;
+    margin: 1%;
+    position: relative;
+    float: left;
+    width: 99%;
+}
+.key_div1 ul{    
+    margin-top: 0;
+}
+.key_div1 > ul{
+    margin-left: 3%;
+}
+.key_div1 > ul >li {
+    list-style-type: disc;
+}
+
+.key_div1 > ul >li > ul > li{
+    list-style-type: square;
+    margin-left: 2%;
+}
+
+.key_div1 > ul >li > ul > li > ul > li{
+    list-style-type: circle;
+    margin-left: 2%;
+}
+
+.snap_img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.aligncenter{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+}
+.Quarter{
+    text-align: center;
+    padding-right: 20px;
+}
+.mod_div{
+    margin-right: 1%;
+    width: 48%; 
+    position: relative; 
+    float: left;
+}

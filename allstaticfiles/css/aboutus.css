@@ -1,0 +1,220 @@
+#bg-1{
+    width: 100%;
+    height: 300px;
+    
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;    
+    margin-top: 100px;
+}
+.bg-aboutus{
+    background: url("../img/aboutus-background.jpg") !important;
+}
+.bg-contactus{
+    background: url("../img/cyber-sec-4.jpg") !important;
+}
+.bg-news{
+    background: url("../img/news-background.jpg") !important;
+}
+.bg-partner{
+    background: url("../img/partner-background.jpg") !important;
+}
+.bg-Insights{
+    background: url("../img/blog-thumbnail_3-2-1.jpg") !important;
+}
+.bg-SearchResult{
+    background: url("../img/gradient-mesh-5.jpg") !important;
+    padding-top: 10px;
+    color:white;
+}
+.title-us{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 100px;
+    margin-bottom: 0; 
+    font-size: 45px;
+}
+.title-search{
+    text-align: center;
+    text-shadow: -5px 4px 10px #000000;
+    margin-top: 100px;
+    margin-bottom: 0; 
+    font-size: 70px;
+}
+article{
+    background-color: white;
+    padding-top: 40px;
+}
+article p{
+    font-weight: 300;
+}
+.sublink{
+    margin: auto;
+    width: 420px;
+}
+.sublink li{
+    float: left;
+    margin-right: 10px;
+}
+.sublink li a{
+    font-size: 0.95em;
+    text-decoration: underline;
+    color: #002C5C;
+    margin-right: 10px;
+}
+.article{
+    margin-top: 10px;
+    font-size: 0.95em;
+}
+.article1{
+    border-left: 2px solid #d5d5d5;
+    margin-left: -18px;
+    padding-left: 18px;
+}
+.article2{
+    padding: 15px;
+    background-color: #efefef;
+}
+.article3 ul{
+    list-style-type: decimal;
+    padding-left: 45px;
+    font-weight: 300;
+    font-style: italic;;
+}
+.management .col-md-6{
+    float: left;
+    padding: 10px;
+}
+.management .col-md-4{
+    float: left;
+    padding: 10px;
+}
+.management img{
+    display: block;
+    margin: auto;
+    transition: .5s ease;
+    opacity:1;
+    backface-visibility: hidden;
+}
+
+.management h5, h6{
+    text-align: center;
+}
+.management p{
+    margin: auto;
+    width: 77%;
+}
+.key_div1{
+    margin-top: -1em !important;
+    margin: 1%;
+    position: relative;
+    float: left;
+    width: 99%;
+}
+.key_div1 ul{    
+    margin-top: 0;
+}
+.key_div1 > ul{
+    margin-left: 3%;
+}
+.key_div1 > ul >li {
+    list-style-type: disc;
+}
+
+.key_div1 > ul >li > ul > li{
+    list-style-type: square;
+    margin-left: 2%;
+}
+
+.key_div1 > ul >li > ul > li > ul > li{
+    list-style-type: circle;
+    margin-left: 2%;
+}
+.flip-panel {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.flip-panel_content {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 20px 24px;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-grow: 1;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.flip-panel_hasback .flip-panel_front {
+    position: absolute;
+}
+.flip-panel_back {
+    background:#34425F;
+    transform: scaleX(0);
+    opacity: 0;
+    position: absolute;
+}
+.flip-panel_image {
+    background-size: cover;
+    background-position: top center;
+    margin: auto -20px -24px;
+    flex-grow: 1;
+}
+
+.flip-panel.flip-panel-hasback:hover .flip-panel_back, 
+.flip-panel.flip-panel-hasback:active .flip-panel_back, 
+.flip-panel.flip-panel-hasback:focus .flip-panel_back {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.flip-panel.flip-panel-hasback:hover .flip-panel_front, 
+.flip-panel.flip-panel-hasback:active .flip-panel_front, 
+.flip-panel.flip-panel-hasback:focus .flip-panel_front {
+    transform: scaleX(0);
+    opacity: 0;
+}
+.flip-panel_title, .flip-panel_subtitle, .flip-panel_backtext{
+    color: white;
+}
+.flip-panel_backtext{
+    text-align: left;
+    font-size: 70%;
+}
+@media only screen and (min-width: 64em){
+    .wrap{
+        width: 40em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 300px){
+    .management .col-md-6{
+        width: 100%;
+        padding: 10px;
+        max-width: 100%;
+    }
+    .management .col-md-4{
+        width: 100%;
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1000px){
+    .management .col-md-6{
+        width: 50%;
+        padding: 10px;
+        max-width: 50%;
+    }
+    .management .col-md-4{
+        width: 33%;
+        padding: 10px;
+        max-width: 33%;
+    }
+}

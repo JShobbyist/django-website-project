@@ -1,0 +1,272 @@
+/*
+Theme Name: Novantas
+Theme URI: http://novantas.com/novantas-child
+Child Description: Child theme for the Novantas custom theme.
+Template: novantas
+Author: Brigid Barrett & Adrienne Cohen
+Author URI: https://novantas.com/
+Text Domain: novantas
+*/
+
+
+/*=============NEW COLORS 2019===============*/
+
+.callout-post h4{
+background:#00263d !important;
+}
+
+.callout-post-article h4{
+background:#00263d !important;
+}
+
+.callout-post-research h4{
+background:#004d71 !important;
+}
+
+
+.callout-post-case-study h4{
+background:#00bbb4 !important;
+}
+
+
+.callout-post-event h4, .category-tag-event {
+background:#0084ad !important;
+}
+
+.callout-post-news h4{
+background:#494949 !important;
+}
+
+.callout-post-novantas-perspective h4{
+background: #682666 !important;
+}
+
+.callout-post-insights h4,
+.callout-post-press-release h4{
+background:#d51067 !important;
+}
+
+.callout-post-novantas-review h4{
+background:#d18a00 !important;
+	}
+
+.scroll-header {
+background: #00263d !important;
+}
+
+nav.slide-menu-top {
+background: #1A1360 !important;
+
+}
+
+h5 a {
+color: #00263d !important; /*text links on homepage*/
+}
+
+h3 a {
+color: #00263d !important; /*text links on news and insights*/
+}
+
+.background-color-dark-blue {
+background:#00263d;	/*behind header images*/
+}
+
+.section-orange  {
+	background:#0084ad !important; /*now light blue*/
+}
+
+.section-orange+.section svg {
+	fill: #0084ad !important; /*now light blue*/
+}
+
+
+.section-gray  {
+	background:#e0e6e9 !important; /*now better gray*/
+}
+
+.section-gray+.section svg {
+	fill: #e0e6e9 !important; /*now better gray*/
+}
+
+.section-dark-blue-tiles, .section-dark-blue {
+background:#004d71 !important; /*related materials background*/
+		
+}
+
+.tags a {
+	color:#00263d !important;
+	text-decoration: none;	
+}
+
+.pagination a {
+color:#0084ad !important;
+}
+.pagination a:hover {
+	color:#fff !important;
+	background: #0084ad !important;
+}
+
+.category-tag-news {
+background:#ffb700 !important;
+
+}
+
+.vcard-marketing {
+	color: #00263d !important;	
+}
+
+.vcard-marketing a {
+	color: #00263d !important;	
+}
+
+.vcard-marketing a:hover {
+	color: #4b6073 !important;	
+}
+
+
+
+
+/*=============NEW COLORS BUTTONS===============*/
+
+.button-orange  {
+	background:#0084ad !important; /*now light blue*/
+	border: 1px solid #fff !important;
+}
+
+.button-orange:hover {
+	background: #fff !important; 
+	color: #0084ad !important;	
+	border: 1px solid #0084ad !important;
+}
+
+.button-dark-blue {
+background:#00263d !important;
+border: 1px solid #00263d !important;
+}
+
+.button-dark-blue:hover {
+background:#fff !important;
+color: #00263d !important;
+border: 1px solid #00263d !important;}
+
+/* .button-white {
+background:#fff!important;
+border: 1px solid #0084ad !important;
+color: #0084ad !important;
+}
+
+.button-white:hover {
+background:#0084ad!important;
+border: 1px solid #0084ad !important;
+color: #fff !important;		
+} */
+.button-white {
+	background:#fff!important;
+	border: 1px solid #F68A5C !important;
+	color: #F68A5C !important;
+}
+	
+.button-white:hover {
+	background:#F68A5C!important;
+	border: 1px solid #F68A5C !important;
+	color: #fff !important;		
+}
+
+/*=============NEW COLORS SLIDER TAG===============*/
+
+.category-tag-article, .category-dark-blue {
+background:#00263d !important;
+}
+
+.category-green {
+background:#00bcb4 !important;
+	
+}
+
+.category-tag-novantas-perspective, .category-blue {
+background:#0084ad !important;
+	
+}
+
+.category-orange {
+	background:#f42534 !important;
+}
+
+.category-purple {
+	background:#682666 !important;
+}
+
+.category-red {
+	background:#d51067 !important;
+}
+
+.category-gold {
+	background:#d18a00 !important;
+}
+
+.category-dark-purple {
+	background:#4b1a54 !important;
+}
+
+.category-subscription{
+	background:#F68A5C !important;
+}
+
+
+
+
+/*=============FOOTER===============*/
+.footer-menu {
+	font-size: 0.7em;
+
+}
+
+.footer-utility-menu{
+	font-size: 0.7em;
+
+}
+
+.social-media-menu {
+	float: left;
+}
+
+.copyright {
+	font-size: 0.5em !important;
+}
+
+.form-post-filter{
+	font-size: 0.8em;
+}
+
+@media only screen and (min-width: 64em){
+
+		#inner-footer {
+			max-width: 30em;
+			/*text-align: center;*/}
+
+
+		.footer-utility-menu{
+			padding-left: 0em;
+			margin-left: 6.75em;
+		}
+
+		.social-media-menu {
+			float:left;
+		}
+
+		.copyright {
+			min-width: 15em;
+		}
+}
+
+
+/*=============FOOBAR===============*/
+
+.foobar-container, .foobar-container-row, .element-style, .foobar-open-button {
+	background-color: #F68A5C !important;
+}
+
+.sjb-container {
+	margin-top: 50px;
+}
+
